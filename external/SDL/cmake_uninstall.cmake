@@ -1,8 +1,8 @@
-if (NOT EXISTS "C:/_Impulse2D/build-web/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/_Impulse2D/build-web/install_manifest.txt\"")
-endif(NOT EXISTS "C:/_Impulse2D/build-web/install_manifest.txt")
+if (NOT EXISTS "D:/_GitProjects/Impulse2D/build-web/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"D:/_GitProjects/Impulse2D/build-web/install_manifest.txt\"")
+endif(NOT EXISTS "D:/_GitProjects/Impulse2D/build-web/install_manifest.txt")
 
-file(READ "C:/_Impulse2D/build-web/install_manifest.txt" files)
+file(READ "D:/_GitProjects/Impulse2D/build-web/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach (file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

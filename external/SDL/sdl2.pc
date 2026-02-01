@@ -1,6 +1,6 @@
 # sdl pkg-config source file
 
-prefix=C:/emsdk/upstream/emscripten/cache/sysroot
+prefix=D:/_GitProjects/emsdk/upstream/emscripten/cache/sysroot
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
